@@ -31,13 +31,13 @@
 
     <section class="services_section">
         <div class="container">
-            <h2 class="hidet">Услуги</h2>
+            <h2>Услуги</h2>
         </div>
     </section>
 
     <section class="utp_section">
         <div class="container">
-            <h2 class="hidet">Инновационное производство фасадов</h2>
+            <h2>Инновационное производство фасадов</h2>
         </div>
     </section>
 
