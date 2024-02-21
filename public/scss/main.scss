@@ -23,8 +23,7 @@ section{
 }
 
 .container{
-    width:100%;
-    max-width: $conteiner_max_w;
+    width:94%;
     margin: 0 auto;
 }
 
@@ -34,4 +33,23 @@ section{
     height: auto
 }
 
+.sprite_icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px
+}
+
+a {
+    color:$main_color;
+    &:hover {
+        color: $hover_color
+    }
+}
+
+.hidet{
+    display: none
+}
+
 @import "sidebar-schem";
+@import "main-page-style";
+@import "footer";

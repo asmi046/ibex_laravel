@@ -58,13 +58,13 @@
                 </div>
 
                 <div class="sb_social">
-                    <a href="#">
+                    <a href="{{$options["tg_lnk"]}}">
                         <svg class="sprite_icon">
                             <use xlink:href="#tg_icon"></use>
                         </svg>
                     </a>
 
-                    <a href="#">
+                    <a href="{{$options["ws_lnk"]}}">
                         <svg class="sprite_icon">
                             <use xlink:href="#ws_icon"></use>
                         </svg>
@@ -79,6 +79,12 @@
 
         <div class="main_page">
             @yield('main')
+            <footer>
+                <div class="container">
+                    <span class="copyright">ИБАКС© 2023-{{date("Y")}}</span>
+                    <a class="policy" href="#">Политика в области персональных данных</a>
+                </div>
+            </footer>
         </div>
     </main>
 </body>

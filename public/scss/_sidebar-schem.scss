@@ -33,7 +33,7 @@
             a{
                 display: block;
                 color: $black_color;
-                margin: 10px 0;
+                margin: 5px 0;
                 padding: 5px 0;
                 border-radius: $border_rad;
                 font-size: 18px;
@@ -48,6 +48,34 @@
 
         .sb_body {
             padding-left: 60px;
+        }
+
+        .sb_contact {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            hr{
+                width:50%;
+                background-color: $hover_color;
+                height: 2px;
+                border: none;
+                margin-left: 0;
+            }
+
+            .email_lnk {
+                margin-bottom: 5px;
+            }
+
+            .phone_lnk {
+                font-size: 28px;
+                margin: 5px 0 10px 0;
+                color:$black_color
+            }
+        }
+
+        .sb_social {
+            display: flex;
+
         }
 
         header {

@@ -1,3 +1,14 @@
 footer {
-    
+    background-color: $gray_border_color;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .policy {
+        color:$black_color;
+        &:hover{
+            color:$hover_color;
+        }
+    }
 }
