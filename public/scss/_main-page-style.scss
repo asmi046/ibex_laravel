@@ -1,13 +1,173 @@
 .main_banner_section {
+    display: flex;
+    flex-direction: column;
     background-image: url(../img/main_bg.webp);
-    color:white;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    min-height: 500px;
+    color:white;
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        flex-grow: 1;
+    }
+    h1, p{
+        margin: 0;
+        padding: 0;
+    }
+    p{
+        max-width: 540px;
+        font-size: 18px;
+        line-height: 1.4;
+
+    }
+    .button-white{
+        border: 1px solid $main_color;
+    }
 }
 
+
+
+.product_slider_section{
+    position: relative;
+    padding: 50px 0;
+    overflow: hidden;
+}
+.ibex-sl-box{
+
+    .ibex-sl-box__top{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 20px;
+        h2{
+            font-size: 32px;
+            line-height: 1.3;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .ibex-sl-box__sl-controls{
+        margin-left: auto;
+        display: flex;
+        gap: 20px;
+        .swiper-button-prev,
+        .swiper-button-next{
+            position: relative;
+            top: 0;
+            left: 0;
+            margin: 0;
+            right: auto;
+            bottom: auto;
+            width: 40px;
+            height: 40px;
+            border: 1px solid var(--border);
+            background-color: rgba(255, 255, 255, 0);
+            transition: var(--great-transition);
+            &::after{
+                font-size: 25px;
+                font-weight: bold;
+                color: var(--blue);
+            }
+            &:hover{
+                border: 1px solid var(--blue);
+                background-color: var(--blue);
+                &::after{
+                    color: var(--light);
+                }
+            }
+        }
+        .swiper-button-prev{
+
+        }
+        .swiper-button-next{
+
+        }
+    }
+
+    .ibex-sl-box__main{
+        .container{
+            padding-right: 0;
+        }
+        .ibex-sl{
+
+        }
+        .swiper-slide{
+
+        }
+
+    }
+    .swiper-horizontal{
+        margin-right: -185px;
+    }
+}
+
+.advantages_section{
+    background-color: gold;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.services_section{
+    position: relative;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    overflow: hidden;
+    .services_section__title-box{
+        background-color: var(--red);
+        padding: 60px 50px;
+        .section-title{
+            margin: 0;
+            padding: 0;
+            font-size: 40px;
+            line-height: 1.3;
+            color: var(--light);
+            font-weight: 700;
+        }
+    }
+
+}
+.services__box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+
 .utp_section {
+    position: relative;
     background-image: url(../img/advantage_bg.webp);
     color:white;
     background-size: cover;
-    height: 500px;
+    min-height: 500px;
+    padding: 80px 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    .container{
+       display: flex;
+       flex-direction: column;
+       gap: 60px;
+       height: 100%;
+    }
+    .section-title{
+        max-width: 580px;
+        margin: 0;
+        font-size: 40px;
+        line-height: 1.3;
+        font-weight: 700;
+    }
+    p{
+        margin: 0;
+        max-width: 537px;
+        font-size: 18px;
+    }
+    .button{
+        margin-top: 15px;
+    }
 }

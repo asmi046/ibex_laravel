@@ -35,10 +35,10 @@
     @include("allicon")
     <main class="sidebar_schem" id="main">
 
-        <div class="mobile_menu_btn">
+        {{-- <div class="mobile_menu_btn">
             <i class="fa-solid fa-bars open"></i>
             <i class="fa-solid fa-xmark close"></i>
-        </div>
+        </div> --}}
 
         <div class="sidebar">
             <header>
@@ -71,10 +71,7 @@
                     </a>
                 </div>
             </div>
-
-            <footer>
-
-            </footer>
+            <button class="burger-btn"><span></span></button>
         </div>
 
         <div class="main_page">

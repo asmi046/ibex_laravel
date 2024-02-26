@@ -18,3 +18,13 @@ $conteiner_max_w: 1280px;
 $box_shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
 $box_padding: 1.25rem;
 $box_border_rad: 6px;
+
+:root{
+    --light: #ffffff;
+    --border: #3e3e3d;
+    --dark: #000000;
+    --blue: #385787;
+    --red: #b9151b;
+    --bg: #f8fafc;
+    --great-transition: all .3s ease;
+}

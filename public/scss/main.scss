@@ -1,3 +1,5 @@
+@import "typography";
+@import "common";
 @import "vars";
 @import "null";
 @import "fonts";
@@ -23,8 +25,9 @@ section{
 }
 
 .container{
-    width:94%;
-    margin: 0 auto;
+    // width:94%;
+    // margin: 0 auto;
+    padding: 0 40px;
 }
 
 
@@ -53,3 +56,4 @@ a {
 @import "sidebar-schem";
 @import "main-page-style";
 @import "footer";
+@import "media";
