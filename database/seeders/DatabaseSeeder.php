@@ -14,7 +14,9 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(
             [
-                OptionSeeder::class
+                OptionSeeder::class,
+                PageSeeder::class,
+                MenuSeeder::class
             ]
         );
         // \App\Models\User::factory(10)->create();
