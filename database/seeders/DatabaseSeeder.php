@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(
             [
+                ServiceSeeder::class,
                 OptionSeeder::class,
                 PageSeeder::class,
                 MenuSeeder::class
