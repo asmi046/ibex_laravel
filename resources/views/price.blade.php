@@ -1,18 +1,24 @@
 @extends('layouts.all')
 
 @php
-    $title = "Ибекс";
-    $description = "Ибекс";
+    $title = "Прайс на продукцию компании «ИБАКС»";
+    $description = "Прайс на услуги и продукцию компании «ИБАКС»";
 @endphp
 
 @section('title', $title)
 @section('description', $description)
 
 @section('main')
-<section class="page_section">
-    <div class="container">
-        <h1>Прайслист</h1>
-    </div>
-</section>
+    <x-inner-page-header
+        title="Прайс лист"
+        subtitle="Прайс на услуги и продукцию<br> компании «ИБАКС»"
+        :banner="asset('img/top_img/services.webp')"
+    ></x-inner-page-header>
+
+    <section class="breadcrumbs_section">
+        <div class="container">
+            <x-breadcrumbs.main :title="$title"></x-breadcrumbs.main>
+        </div>
+    </section>
 @endsection
 

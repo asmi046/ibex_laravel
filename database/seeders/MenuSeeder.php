@@ -33,12 +33,6 @@ class MenuSeeder extends Seeder
                 ],
 
                 [
-                    'lnk' => "/kalkuliator",
-                    'order' => 4,
-                    'title' => "Калькулятор",
-                ],
-
-                [
                     'lnk' => "/technical-documentation",
                     'order' => 5,
                     'title' => "Техдокументация",

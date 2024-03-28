@@ -1,18 +1,24 @@
 @extends('layouts.all')
 
 @php
-    $title = "Ибекс";
-    $description = "Ибекс";
+    $title = "Техническая документация на продукцию компании «ИБАКС»";
+    $description = "Техническая документация на продукцию компании «ИБАКС», вся необходимая информация для проектировщиков и закупщиков";
 @endphp
 
 @section('title', $title)
 @section('description', $description)
 
 @section('main')
-<section class="page_section">
-    <div class="container">
-        <h1>Техническая документация</h1>
-    </div>
-</section>
+    <x-inner-page-header
+    title="Техническая документация"
+    subtitle="Техническая документация на<br> продукцию компании «ИБАКС»"
+    :banner="asset('img/top_img/pl_gold.webp')"
+    ></x-inner-page-header>
+
+    <section class="breadcrumbs_section">
+        <div class="container">
+            <x-breadcrumbs.main :title="$title"></x-breadcrumbs.main>
+        </div>
+    </section>
 @endsection
 

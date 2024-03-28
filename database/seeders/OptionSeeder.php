@@ -22,7 +22,7 @@ class OptionSeeder extends Seeder
                     "name" => "phone",
                     "type" => "plan",
                     'title' => 'Телефон',
-                    "value" => "8 800 000 00 00",
+                    "value" => "+7 (4712) 735-400",
                 ],
                 [
                     "name" => "phone2",
@@ -35,7 +35,28 @@ class OptionSeeder extends Seeder
                     "name" => "email",
                     "type" => "plan",
                     'title' => 'email',
-                    "value" => "info@mail.com",
+                    "value" => "kursk@glavtk.ru",
+                ],
+
+                [
+                    "name" => "adress",
+                    "type" => "plan",
+                    'title' => 'Адрес компании',
+                    "value" => "305527, Курская область, Курский район, д. Ворошнево, ул. Сосновая, д. 1/1",
+                ],
+
+                [
+                    "name" => "geo",
+                    "type" => "plan",
+                    'title' => 'Координаты на карте',
+                    "value" => "51.65145413210463,36.04618436242675",
+                ],
+
+                [
+                    "name" => "organization_name",
+                    "type" => "plan",
+                    'title' => 'Название организации',
+                    "value" => "ООО «ИБАКС»",
                 ],
 
                 [

@@ -38,14 +38,6 @@ class PageSeeder extends Seeder
                     'seo_title' => 'Контакты',
                     'seo_description' => 'Контакты',
                 ],
-                [
-                    'title' => 'Калькулятор',
-                    'slug' => Str::slug("Калькулятор"),
-                    'img' => Storage::url("banner/main_bg.webp"),
-                    'description' => '',
-                    'seo_title' => 'Калькулятор',
-                    'seo_description' => 'Калькулятор',
-                ]
             ]);
 
     }
