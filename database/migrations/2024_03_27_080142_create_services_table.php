@@ -20,6 +20,7 @@ return new class extends Migration
             $table->text('short_description')->nullable()->comment('Описание услуги (краткое)');
             $table->text('description')->nullable()->comment('Описание услуги');
             $table->integer('order')->default(1)->comment('порядок');
+            $table->json('galery')->nullable()->comment('Галерея');
             $table->string('seo_title')->nullable()->comment('SEO заголовок');
             $table->text('seo_description')->nullable()->comment('SEO описание');
         });
