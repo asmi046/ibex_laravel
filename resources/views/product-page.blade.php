@@ -1,32 +1,47 @@
 @extends('layouts.all')
 
 @php
-    $title = "Продукция нашей компании";
-    $description = "Продукция компании «ИБАКС». Мы гарантируем качество и соответствие отечественным и зарубежным стандартам";
+    extract(get_page_meta(
+        "Продукт компании ИБАКС",
+        isset($product)? $product : null
+    ));
 @endphp
 
 @section('title', $title)
 @section('description', $description)
+@section('banner', $page_banner)
+@section('page_title', $page_title)
+
 
 @section('main')
 
     <x-inner-page-header
-        title="Продукция нашей компании"
-        subtitle="Навесные объемные фасады,<br>фурнитура и комплектующие"
+        :title="$product->title"
+        subtitle=""
         :banner="asset('img/top_img/home.webp')"
     ></x-inner-page-header>
 
     <section class="breadcrumbs_section">
         <div class="container">
-            <x-breadcrumbs.main :title="$title"></x-breadcrumbs.main>
+            <x-breadcrumbs.main :product="$title"></x-breadcrumbs.main>
         </div>
     </section>
 
-    <section class="product_section">
+    <section class="product_page_section">
         <div class="container">
-            @foreach ($products as $item)
-                <x-product.page-card :item="$item"></x-product.page-card>
-            @endforeach
+            <div class="inner_top_line">
+                <div class="img_wrapper">
+                    <img src="{{ Storage::url('products/'.$product->img) }}" alt="{{ $product->title }}">
+                </div>
+
+                <div class="short_description text_styles">
+                    {!! $product->short_description !!}
+                </div>
+            </div>
+
+            <div class="inner_description text_styles">
+                {!! $product->description !!}
+            </div>
         </div>
     </section>
 

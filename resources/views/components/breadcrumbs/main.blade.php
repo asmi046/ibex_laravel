@@ -11,11 +11,11 @@
 
 
 
-            @if (Request::route()->named('search-tovar'))
+            @if (Request::route()->named('product_page'))
                 <span class="sep"> / </span>
                 <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a title="{{$article}}" itemprop="item" href="{{route('search', ['search'=> $article])}}">
-                        <span itemprop="name">{{ $article }}</span>
+                    <a title="Все продукты" itemprop="item" href="{{route('products')}}">
+                        <span itemprop="name">Все продукты</span>
                         <meta itemprop="position" content="1">
                     </a>
                 </span>
@@ -23,8 +23,27 @@
                 <span class="sep"> / </span>
 
                 <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="finish">
-                    <span title="{{ $brand }}" itemprop="item">
-                        <span itemprop="name">{{ $brand }}</span>
+                    <span title="{{ $product }}" itemprop="item">
+                        <span itemprop="name">{{ $product }}</span>
+                        <meta itemprop="position" content="2">
+                    </span>
+                </span>
+            @endif
+
+            @if (Request::route()->named('service_page'))
+                <span class="sep"> / </span>
+                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a title="Все услуги" itemprop="item" href="{{route('products')}}">
+                        <span itemprop="name">Все услуги</span>
+                        <meta itemprop="position" content="1">
+                    </a>
+                </span>
+
+                <span class="sep"> / </span>
+
+                <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="finish">
+                    <span title="{{ $service }}" itemprop="item">
+                        <span itemprop="name">{{ $service }}</span>
                         <meta itemprop="position" content="2">
                     </span>
                 </span>
