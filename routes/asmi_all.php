@@ -15,11 +15,15 @@
     Route::get('/', [IndexController::class, "index"])->name('home');
     // Route::get('/bim_lib', [BimController::class, "index"])->name('bim_lib');
     // Route::get('/calculator', [CalcController::class, "index"])->name('calculator');
-    // Route::get('/contacts', [ContactsController::class, "index"])->name('contacts');
+    Route::get('/contacts', [ContactsController::class, "index"])->name('contacts');
     Route::get('/technical-documentation', [DocumentationController::class, "index"])->name('doc');
     Route::get('/price-list', [PriceController::class, "index"])->name('price');
+
     Route::get('/products', [ProductController::class, "index"])->name('products');
+    Route::get('/products/{slug}', [ProductController::class, "product_page"])->name('product_page');
+
     Route::get('/services', [ServiceController::class, "index"])->name('services');
+    Route::get('/services/{slug}', [ServiceController::class, "service_page"])->name('service_page');
 
 
     Route::get('/{slug}', [PageController::class, "index"])->name('page');

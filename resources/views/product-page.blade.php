@@ -24,12 +24,9 @@
 
     <section class="product_section">
         <div class="container">
-            <div class="prosucts_apge_wrapper">
-                @foreach ($products as $item)
-                    <x-product.page-card :item="$item"></x-product.page-card>
-                @endforeach
-            </div>
-            <x-pagination :tovars="$products"></x-pagination>
+            @foreach ($products as $item)
+                <x-product.page-card :item="$item"></x-product.page-card>
+            @endforeach
         </div>
     </section>
 

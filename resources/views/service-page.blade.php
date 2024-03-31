@@ -20,16 +20,5 @@
             <x-breadcrumbs.main :title="$title"></x-breadcrumbs.main>
         </div>
     </section>
-
-    <section class="service_section">
-        <div class="container">
-            <div class="service_apge_wrapper">
-                @foreach ($service as $item)
-                    <x-services.page-card :item="$item"></x-services.page-card>
-                @endforeach
-            </div>
-        </div>
-    </section>
-
 @endsection
 
