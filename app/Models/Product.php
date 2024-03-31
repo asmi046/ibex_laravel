@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Service extends Model
+class Product extends Model
 {
     use HasFactory;
 
@@ -16,13 +16,8 @@ class Service extends Model
         'short_description',
         'description',
         'order',
-        'galery',
         'seo_title',
         'seo_description',
-    ];
-
-    protected $casts = [
-        "galery" => 'object',
     ];
 
     public function setSlugAttribute($value)
@@ -32,5 +27,4 @@ class Service extends Model
         else
             $this->attributes['slug'] =  $value;
     }
-
 }
