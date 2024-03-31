@@ -5,5 +5,6 @@
         <span class="products-item__description">
             {{ $item['short_description'] }}
         </span>
+        <a class="products-item__more" href="{{ route('product_page', $item['slug']) }}">Подробнее...</a>
     </span>
 </div>

@@ -33,7 +33,7 @@
             @if (Request::route()->named('service_page'))
                 <span class="sep"> / </span>
                 <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                    <a title="Все услуги" itemprop="item" href="{{route('products')}}">
+                    <a title="Все услуги" itemprop="item" href="{{route('services')}}">
                         <span itemprop="name">Все услуги</span>
                         <meta itemprop="position" content="1">
                     </a>

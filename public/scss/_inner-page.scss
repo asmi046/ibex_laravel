@@ -1,0 +1,40 @@
+.inner_top_line {
+    display: flex;
+
+    .img_wrapper {
+        width:350px;
+        border:  1px solid $gray_border_color;
+        margin-right: 20px;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .inner_top_line {
+        flex-wrap: wrap;
+        .img_wrapper {
+            width:50%;
+        }
+
+        .short_description {
+            flex: 1;
+        }
+    }
+
+}
+
+@media screen and (max-width:480px){
+    .inner_top_line {
+        flex-direction: column;
+        .img_wrapper {
+            width:100%;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        .short_description {
+            flex: 1;
+        }
+    }
+
+}

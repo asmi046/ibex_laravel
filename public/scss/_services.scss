@@ -1,0 +1,38 @@
+.service_apge_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .page_service_card {
+        width:31%;
+        margin-bottom: 20px;
+
+        .img_wrapper {
+            height: 250px;
+            img{
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:1280px){
+    .service_apge_wrapper {
+        .page_service_card {
+            width:48%;
+        }
+    }
+}
+
+
+@media screen and (max-width:480px){
+    .service_apge_wrapper {
+        .page_service_card {
+            width:100%;
+        }
+    }
+}
+
+
