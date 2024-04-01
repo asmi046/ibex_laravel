@@ -1,8 +1,8 @@
 @extends('layouts.all')
 
 @php
-    $title = "Прайс на продукцию компании «ИБАКС»";
-    $description = "Прайс на услуги и продукцию компании «ИБАКС»";
+    $title = "Прайс на продукцию компании «ИБЕКС»";
+    $description = "Прайс на услуги и продукцию компании «ИБЕКС»";
 @endphp
 
 @section('title', $title)
@@ -11,7 +11,7 @@
 @section('main')
     <x-inner-page-header
         title="Прайс лист"
-        subtitle="Прайс на услуги и продукцию<br> компании «ИБАКС»"
+        subtitle="Прайс на услуги и продукцию<br> компании «ИБЕКС»"
         :banner="asset('img/top_img/services.webp')"
     ></x-inner-page-header>
 

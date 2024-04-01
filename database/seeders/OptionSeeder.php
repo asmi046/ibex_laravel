@@ -35,7 +35,7 @@ class OptionSeeder extends Seeder
                     "name" => "email",
                     "type" => "plan",
                     'title' => 'email',
-                    "value" => "kursk@glavtk.ru",
+                    "value" => "info@glavtk.ru",
                 ],
 
                 [
@@ -56,7 +56,7 @@ class OptionSeeder extends Seeder
                     "name" => "organization_name",
                     "type" => "plan",
                     'title' => 'Название организации',
-                    "value" => "ООО «ИБАКС»",
+                    "value" => "ООО «ИБЕКС»",
                 ],
 
                 [
@@ -91,7 +91,7 @@ class OptionSeeder extends Seeder
                     "name" => "main_sub_header",
                     "type" => "rich",
                     'title' => 'Подзаголовок на главной',
-                    "value" => "Навесные фасадные системы (НФС) с вентилируемым зазором ИБЭКС - это современный способ обезопасить внешние с тены здания от негативного влияния окружающей среды",
+                    "value" => "Навесные фасадные системы (НФС) с вентилируемым зазором ИБЕКС - это современный способ обезопасить внешние с тены здания от негативного влияния окружающей среды",
                 ],
 
                 [

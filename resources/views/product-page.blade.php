@@ -2,7 +2,7 @@
 
 @php
     extract(get_page_meta(
-        "Продукт компании ИБАКС",
+        "Продукт компании ИБЕКС",
         isset($product)? $product : null
     ));
 @endphp

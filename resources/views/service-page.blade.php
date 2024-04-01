@@ -2,7 +2,7 @@
 
 @php
     extract(get_page_meta(
-        "Услуга компании ИБАКС",
+        "Услуга компании ИБЕКС",
         isset($service)? $service : null
     ));
 @endphp

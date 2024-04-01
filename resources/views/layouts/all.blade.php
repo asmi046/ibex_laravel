@@ -78,7 +78,7 @@
             @yield('main')
             <footer>
                 <div class="container">
-                    <span class="copyright">ИБАКС© 2023-{{date("Y")}}</span>
+                    <span class="copyright">ИБЕКС© 2023-{{date("Y")}}</span>
                     <a class="policy" href="#">Политика в области персональных данных</a>
                 </div>
             </footer>
