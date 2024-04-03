@@ -34,9 +34,9 @@
                     <img src="{{ Storage::url('products/'.$product->img) }}" alt="{{ $product->title }}">
                 </div>
 
-                <div class="short_description text_styles">
+                {{-- <div class="short_description text_styles">
                     {!! $product->short_description !!}
-                </div>
+                </div> --}}
             </div>
 
             <div class="inner_description text_styles">
