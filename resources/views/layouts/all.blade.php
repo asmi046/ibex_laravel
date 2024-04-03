@@ -23,6 +23,8 @@
     <link rel="icon" type="image/png" href="{{asset('/img/favicons/icon16.png')}}" sizes="16x16">
     <link rel="icon" type="image/svg" href="{{asset('/img/favicons/fav.svg')}}" sizes="any">
 
+    <meta name="mailru-domain" content="zc3hUGA0jmUKvgc9" />
+
     <meta name="_token" content="{{ csrf_token() }}">
 
     @vite([
