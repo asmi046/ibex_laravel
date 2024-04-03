@@ -11,7 +11,7 @@
 @section('main')
     <x-inner-page-header
         title="Услуги"
-        subtitle="Услуги по обработке металла,<br>на современном оборудовании"
+        subtitle="Услуги по обработке металла<br>на современном оборудовании"
         :banner="asset('img/top_img/pan_white.webp')"
     ></x-inner-page-header>
 
