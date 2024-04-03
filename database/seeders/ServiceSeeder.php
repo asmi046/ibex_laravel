@@ -100,7 +100,7 @@ class ServiceSeeder extends Seeder
             [
                 'title' => "Лазерная сварка",
                 'slug' => Str::slug("Лазерная сварка"),
-                'order' => 5,
+                'order' => 4,
                 'img' => 'laser_svarka.jpg',
                 'dir' => "laser_svarka",
                 'short_description' => "Высокоточная сварка, оптимально подходит для деталей сложной формы и разнородных материалов",
