@@ -22,7 +22,7 @@ class OptionSeeder extends Seeder
                     "name" => "phone",
                     "type" => "plan",
                     'title' => 'Телефон',
-                    "value" => "+7 (4712) 735-400",
+                    "value" => "+7 (4712) 771-033",
                 ],
                 [
                     "name" => "phone2",
@@ -35,7 +35,7 @@ class OptionSeeder extends Seeder
                     "name" => "email",
                     "type" => "plan",
                     'title' => 'email',
-                    "value" => "info@glavtk.ru",
+                    "value" => "info@ibex.ru",
                 ],
 
                 [
