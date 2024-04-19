@@ -11,7 +11,7 @@
 @section('main')
     <x-inner-page-header
         title="Контакты"
-        subtitle="Контактная  информация нашей компании<br>свяжитесь с нами любым удобным способом"
+        subtitle="Контактная  информация нашей компании,<br>свяжитесь с нами любым удобным способом"
         :banner="asset('img/top_img/contacts.webp')"
     ></x-inner-page-header>
 

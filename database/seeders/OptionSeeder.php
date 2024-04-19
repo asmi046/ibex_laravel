@@ -63,7 +63,7 @@ class OptionSeeder extends Seeder
                     "name" => "tg_lnk",
                     "type" => "plan",
                     'title' => 'Ссылка на Telegram',
-                    "value" => "#",
+                    "value" => "tg://resolve?domain=IBEX_KURSK",
                 ],
 
                 [
@@ -77,7 +77,7 @@ class OptionSeeder extends Seeder
                     "name" => "ws_lnk",
                     "type" => "plan",
                     'title' => 'Ссылка на WhatsApp',
-                    "value" => "#",
+                    "value" => "https://wa.me/79051541323",
                 ],
 
                 [
