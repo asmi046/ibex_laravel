@@ -18,6 +18,10 @@
     <section class="breadcrumbs_section">
         <div class="container">
             <x-breadcrumbs.main :title="$title"></x-breadcrumbs.main>
+
+            <p>Вы можете запросить прайс нашей компании воспользовавшись вормой обратной связи в нашем разделе:</p>
+
+            <x-consultation-form.form title="Запрос прайса"></x-consultation-form.form>
         </div>
     </section>
 @endsection
