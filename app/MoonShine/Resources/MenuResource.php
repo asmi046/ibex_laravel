@@ -4,30 +4,29 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Resources;
 
-use App\Models\Product;
 use MoonShine\Fields\ID;
 
-use MoonShine\Fields\Slug;
+
+use App\Models\Menu\Menu;
+use MoonShine\Fields\Url;
 use MoonShine\Fields\Text;
 use MoonShine\Fields\Field;
-use MoonShine\Fields\Image;
 use MoonShine\Fields\Number;
-use MoonShine\Fields\TinyMce;
-use MoonShine\Fields\Textarea;
 use MoonShine\Decorations\Block;
 use MoonShine\Resources\ModelResource;
 use Illuminate\Database\Eloquent\Model;
 use MoonShine\Components\MoonShineComponent;
 
 /**
- * @extends ModelResource<Product>
+ * @extends ModelResource<Menu>
  */
-class ProductResource extends ModelResource
+class MenuResource extends ModelResource
 {
-    protected string $model = Product::class;
+    protected string $model = Menu::class;
 
-    protected string $title = 'Продукты';
+    protected string $title = 'Меню';
     protected string $column = 'title';
+
 
     /**
      * @return list<MoonShineComponent|Field>
@@ -38,19 +37,14 @@ class ProductResource extends ModelResource
             Block::make([
                 ID::make()->sortable(),
                 Text::make('Название', 'title'),
-                Slug::make('Окончание сылки', 'slug')->hideOnIndex(),
-                Image::make('Основное изображение', 'img')->dir('products'),
-                TinyMce::make('Краткое описание', 'short_description')->hideOnIndex(),
-                TinyMce::make('Описание', 'description')->hideOnIndex(),
+                Url::make('Ссылка', 'lnk'),
                 Number::make('Порядок сортировки', 'order')->sortable(),
-                Text::make('SEO заголовок', 'seo_title')->hideOnIndex(),
-                Textarea::make('SEO описание', 'seo_description')->hideOnIndex()
             ]),
         ];
     }
 
     /**
-     * @param Product $item
+     * @param Menu $item
      *
      * @return array<string, string[]|string>
      * @see https://laravel.com/docs/validation#available-validation-rules

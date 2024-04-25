@@ -22,7 +22,7 @@ class Service extends Model
     ];
 
     protected $casts = [
-        "galery" => 'object',
+        "galery" => 'array',
     ];
 
     public function setSlugAttribute($value)

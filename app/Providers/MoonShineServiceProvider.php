@@ -10,6 +10,7 @@ use MoonShine\Pages\Page;
 use MoonShine\Menu\MenuItem;
 use MoonShine\Menu\MenuGroup;
 use MoonShine\Menu\MenuElement;
+use App\MoonShine\Resources\MenuResource;
 use App\MoonShine\Resources\ProductResource;
 use App\MoonShine\Resources\ServiceResource;
 use MoonShine\Resources\MoonShineUserResource;
@@ -61,6 +62,11 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
                 static fn() => __('Услуги'),
                 new ServiceResource()
             )->icon('heroicons.outline.cog-8-tooth') ,
+
+            MenuItem::make(
+                static fn() => __('Мню'),
+                new MenuResource()
+            )->icon('heroicons.bars-3') ,
         ];
     }
 
