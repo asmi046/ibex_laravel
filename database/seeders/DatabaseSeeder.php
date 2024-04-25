@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
                 ServiceSeeder::class,
                 OptionSeeder::class,
                 PageSeeder::class,
+                UserSeeder::class,
                 MenuSeeder::class
             ]
         );
