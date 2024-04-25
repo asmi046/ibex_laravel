@@ -13,7 +13,7 @@
     use App\Http\Controllers\Page\PageController;
 
     Route::get('/', [IndexController::class, "index"])->name('home');
-    // Route::get('/bim_lib', [BimController::class, "index"])->name('bim_lib');
+    Route::get('/bim_lib', [BimController::class, "index"])->name('bim_lib');
     // Route::get('/calculator', [CalcController::class, "index"])->name('calculator');
     Route::get('/contacts', [ContactsController::class, "index"])->name('contacts');
     Route::get('/technical-documentation', [DocumentationController::class, "index"])->name('doc');
