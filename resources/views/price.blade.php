@@ -20,6 +20,7 @@
             <x-breadcrumbs.main :title="$title"></x-breadcrumbs.main>
             <br>
             <p>Ознакомьтесь с ценовыми предложениями на продукцию нашей компании:</p>
+            <br>
             <a target="_blank" class="button" href="{{ asset('price/PriceListIbexXLSX.xlsx') }}">Скачать прайс</a>
 
         </div>

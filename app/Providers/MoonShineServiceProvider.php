@@ -11,6 +11,7 @@ use MoonShine\Menu\MenuItem;
 use MoonShine\Menu\MenuGroup;
 use MoonShine\Menu\MenuElement;
 use App\MoonShine\Resources\MenuResource;
+use App\MoonShine\Resources\PageResource;
 use App\MoonShine\Resources\OptionResource;
 use App\MoonShine\Resources\ProductResource;
 use App\MoonShine\Resources\ServiceResource;
@@ -73,6 +74,11 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
                 static fn() => __('Мню'),
                 new MenuResource()
             )->icon('heroicons.bars-3') ,
+
+            MenuItem::make(
+                static fn() => __('Страницы'),
+                new PageResource()
+            )->icon('heroicons.outline.clipboard-document') ,
         ];
     }
 

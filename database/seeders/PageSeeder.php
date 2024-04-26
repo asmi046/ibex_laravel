@@ -25,7 +25,7 @@ class PageSeeder extends Seeder
                 [
                     'title' => 'Политика конфиденциальности',
                     'slug' => Str::slug("Политика конфиденциальности"),
-                    'img' => Storage::url("banner/main_bg.webp"),
+                    'img' => "banner/main_bg.webp",
                     'description' => file_get_contents(public_path('pages//policy.html')),
                     'seo_title' => 'Политика конфиденциальности',
                     'seo_description' => 'Политика конфиденциальности',
