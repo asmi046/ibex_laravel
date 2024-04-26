@@ -15,9 +15,10 @@
         :banner="asset('img/top_img/trg.webp')"
     ></x-inner-page-header>
 
-    <section class="breadcrumbs_section">
+    <section class="breadcrumbs_section max_height">
         <div class="container">
             <x-breadcrumbs.main :title="$title"></x-breadcrumbs.main>
+            <h2>Страница в разработке</h2>
         </div>
     </section>
 @endsection

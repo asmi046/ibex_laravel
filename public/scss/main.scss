@@ -105,6 +105,10 @@ img{
     object-fit: contain;
 }
 
+.max_height {
+    min-height: 70%;
+}
+
 @import "header";
 @import "sidebar-schem";
 @import "main-page-style";

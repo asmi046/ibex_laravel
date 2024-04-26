@@ -23,20 +23,12 @@ class PageSeeder extends Seeder
         DB::table("pages")->insert(
             [
                 [
-                    'title' => 'Bim библиотека',
-                    'slug' => Str::slug("Bim библиотека"),
+                    'title' => 'Политика конфиденциальности',
+                    'slug' => Str::slug("Политика конфиденциальности"),
                     'img' => Storage::url("banner/main_bg.webp"),
-                    'description' => file_get_contents(public_path('pages//bim.html')),
-                    'seo_title' => 'Bim библиотека',
-                    'seo_description' => 'Bim библиотека',
-                ],
-                [
-                    'title' => 'Контакты',
-                    'slug' => Str::slug("Контакты"),
-                    'img' => Storage::url("banner/main_bg.webp"),
-                    'description' => '',
-                    'seo_title' => 'Контакты',
-                    'seo_description' => 'Контакты',
+                    'description' => file_get_contents(public_path('pages//policy.html')),
+                    'seo_title' => 'Политика конфиденциальности',
+                    'seo_description' => 'Политика конфиденциальности',
                 ],
             ]);
 

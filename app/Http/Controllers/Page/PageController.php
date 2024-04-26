@@ -15,6 +15,6 @@ class PageController extends Controller
 
         if($page == null) abort('404');
 
-        return view('page', ['page' => $page]);
+        return view('page.page', ['page' => $page]);
     }
 }

@@ -101,7 +101,7 @@
             <footer>
                 <div class="container">
                     <span class="copyright">ИБЕКС© 2023-{{date("Y")}}</span>
-                    <a class="policy" href="#">Политика в области персональных данных</a>
+                    <a class="policy" href="/politika-konfidencialnosti">Политика в области персональных данных</a>
                 </div>
             </footer>
         </div>

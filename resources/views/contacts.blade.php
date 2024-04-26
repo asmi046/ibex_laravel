@@ -21,7 +21,7 @@
         </div>
     </section>
 
-    <section class="contacts_page_section">
+    <section class="contacts_page_section max_height">
         <div class="container">
             <x-page-contacts></x-page-contacts>
             <x-map-in-page></x-map-in-page>

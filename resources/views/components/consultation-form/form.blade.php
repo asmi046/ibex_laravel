@@ -36,7 +36,7 @@
 
             <div class="field check-box">
                 <label class="check_wrapper">
-                    <input name="policy_check" type="checkbox" checked > <span>Заполняя данную форму я соглашаюсь с <a href="#">политикой конфиденциальности</a></span>
+                    <input name="policy_check" type="checkbox" checked > <span>Заполняя данную форму я соглашаюсь с <a href="/politika-konfidencialnosti">политикой конфиденциальности</a></span>
                 </label>
 
                 @error('policy_check')

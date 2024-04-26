@@ -9,7 +9,24 @@
 @section('description', $description)
 
 @section('main')
-    <h1>{{$page->title}}</h1>
-    {!! $page->description !!}
+
+
+    <x-inner-page-header
+        :title="$title"
+        subtitle="Политика конфиденциальности<br> и обработки персональных данных."
+        :banner="asset('img/top_img/trg.webp')"
+    ></x-inner-page-header>
+
+    <section class="breadcrumbs_section">
+        <div class="container">
+            <x-breadcrumbs.main :title="$title"></x-breadcrumbs.main>
+        </div>
+    </section>
+
+    <section class="policy_section max_height">
+        <div class="container">
+            {!! $page->description !!}
+        </div>
+    </section>
 @endsection
 

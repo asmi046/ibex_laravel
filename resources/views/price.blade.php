@@ -15,13 +15,13 @@
         :banner="asset('img/top_img/services.webp')"
     ></x-inner-page-header>
 
-    <section class="breadcrumbs_section">
+    <section class="breadcrumbs_section max_height">
         <div class="container">
             <x-breadcrumbs.main :title="$title"></x-breadcrumbs.main>
+            <br>
+            <p>Ознакомьтесь с ценовыми предложениями на продукцию нашей компании:</p>
+            <a target="_blank" class="button" href="{{ asset('price/PriceListIbexXLSX.xlsx') }}">Скачать прайс</a>
 
-            <p>Вы можете запросить прайс нашей компании воспользовавшись вормой обратной связи в нашем разделе:</p>
-
-            <x-consultation-form.form title="Запрос прайса"></x-consultation-form.form>
         </div>
     </section>
 @endsection
