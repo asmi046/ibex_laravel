@@ -69,10 +69,10 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
                 new OptionResource()
             )->icon('heroicons.adjustments-horizontal') ,
 
-            // MenuItem::make(
-            //     static fn() => __('Мню'),
-            //     new MenuResource()
-            // )->icon('heroicons.bars-3') ,
+            MenuItem::make(
+                static fn() => __('Мню'),
+                new MenuResource()
+            )->icon('heroicons.bars-3') ,
         ];
     }
 
