@@ -15,6 +15,7 @@ use App\MoonShine\Resources\PageResource;
 use App\MoonShine\Resources\OptionResource;
 use App\MoonShine\Resources\ProductResource;
 use App\MoonShine\Resources\ServiceResource;
+use App\MoonShine\Resources\TecnicalDocument;
 use MoonShine\Resources\MoonShineUserResource;
 use MoonShine\Resources\MoonShineUserRoleResource;
 use MoonShine\Contracts\Resources\ResourceContract;
@@ -79,6 +80,11 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
                 static fn() => __('Страницы'),
                 new PageResource()
             )->icon('heroicons.outline.clipboard-document') ,
+
+            MenuItem::make(
+                static fn() => __('Техническая документация'),
+                new TecnicalDocument()
+            )->icon('heroicons.clipboard-document-list') ,
         ];
     }
 

@@ -19,8 +19,8 @@
     Route::get('/technical-documentation', [DocumentationController::class, "index"])->name('doc');
     Route::get('/price-list', [PriceController::class, "index"])->name('price');
 
-    Route::get('/products', [ProductController::class, "index"])->name('products');
-    Route::get('/products/{slug}', [ProductController::class, "product_page"])->name('product_page');
+    Route::get('/navesnye-obieemnye-fasady', [ProductController::class, "index"])->name('products');
+    Route::get('/navesnye-obieemnye-fasady/{slug}', [ProductController::class, "product_page"])->name('product_page');
 
     Route::get('/services', [ServiceController::class, "index"])->name('services');
     Route::get('/services/{slug}', [ServiceController::class, "service_page"])->name('service_page');

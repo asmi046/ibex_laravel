@@ -11,13 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('menus', function (Blueprint $table) {
+        Schema::create('tecnical_documents', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('lnk', 500)->default("#")->comment('Ссылка');
+            $table->string('img')->comment('Картинка');
+            $table->string('file', 500)->comment('Ссылка на файл');
+            $table->string('type')->nullable()->comment('Подраздел');
             $table->string('title', 500)->comment('Анкор ссылки');
-            $table->boolean('enabled')->default(true)->comment('Активен или не активен пункт меню');
-            $table->integer('order')->default(0)->comment('Порядок вывода');
         });
     }
 
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('menus');
+        Schema::dropIfExists('tecnical_documents');
     }
 };

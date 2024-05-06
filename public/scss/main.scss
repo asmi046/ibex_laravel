@@ -109,6 +109,41 @@ img{
     min-height: 70%;
 }
 
+.td_blk_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+
+    .td_blk {
+        width:22%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        h2 {
+            font-size: 20px;
+            color: black
+        }
+    }
+
+    @media screen and (max-width:768px){
+            .td_blk {
+                width:31%;
+            }
+    }
+
+    @media screen and (max-width:480px){
+            .td_blk {
+                width:48%;
+
+                h2 {
+                    font-size: 18px;
+                }
+            }
+    }
+}
+
 @import "header";
 @import "sidebar-schem";
 @import "main-page-style";

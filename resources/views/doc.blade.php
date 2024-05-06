@@ -19,7 +19,15 @@
         <div class="container">
             <x-breadcrumbs.main :title="$title"></x-breadcrumbs.main>
 
-            <h2>Страница в разработке</h2>
+            <div class="td_blk_wrapper">
+                @foreach ($doc as $item)
+                    <a href="{{ Storage::url('td/'.$item->file) }}" class="td_blk">
+                        <img src="{{ Storage::url('td/'.$item->img) }}" alt="{{ $item->title }}">
+                        <h2>{{ $item->title }}</h2>
+                    </a>
+                @endforeach
+            </div>
+
         </div>
     </section>
 @endsection

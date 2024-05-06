@@ -7,10 +7,11 @@ namespace App\MoonShine\Resources;
 use MoonShine\Fields\ID;
 
 
-use App\Models\Menu\Menu;
 use MoonShine\Fields\Url;
+use MoonShine\Fields\File;
 use MoonShine\Fields\Text;
 use MoonShine\Fields\Field;
+use MoonShine\Fields\Image;
 use MoonShine\Fields\Number;
 use MoonShine\Fields\Switcher;
 use MoonShine\Decorations\Block;
@@ -21,11 +22,11 @@ use MoonShine\Components\MoonShineComponent;
 /**
  * @extends ModelResource<Menu>
  */
-class MenuResource extends ModelResource
+class TecnicalDocument extends ModelResource
 {
-    protected string $model = Menu::class;
+    protected string $model = \App\Models\TecnicalDocument::class;
 
-    protected string $title = 'Меню';
+    protected string $title = 'Техническая документация';
     protected string $column = 'title';
 
 
@@ -38,9 +39,13 @@ class MenuResource extends ModelResource
             Block::make([
                 ID::make()->sortable(),
                 Text::make('Название', 'title'),
-                Text::make('Ссылка', 'lnk'),
-                Switcher::make('Отображать', 'enabled'),
-                Number::make('Порядок сортировки', 'order')->sortable(),
+                File::make('Файл', 'file')
+                    ->disk('public')
+                    ->dir('td'),
+                Image::make('Изображение', 'img')
+                    ->disk('public')
+                    ->dir('td'),
+
             ]),
         ];
     }

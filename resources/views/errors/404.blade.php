@@ -13,7 +13,7 @@
         <div class="container">
             <h1>404</h1>
             <p>К сожалению страница не найдена</p>
-            <a href="#" class="button button-white">Перейти в раздел</a>
+            <a href="{{ route('products') }}" class="button button-white">Продукция</a>
         </div>
     </section>
 

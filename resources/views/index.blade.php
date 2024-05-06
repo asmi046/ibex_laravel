@@ -13,7 +13,7 @@
         <div class="container">
             <h1>{!! $options["main_header"] !!}</h1>
             <p>{!! $options["main_sub_header"] !!}</p>
-            <a href="#" class="button button-white">Перейти в раздел</a>
+            <a href="{{ route('products') }}" class="button button-white">Перейти в раздел</a>
         </div>
     </section>
 
