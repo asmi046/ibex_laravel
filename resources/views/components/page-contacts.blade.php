@@ -2,7 +2,7 @@
     <div class="coll">
         <a class="phone_lnk" href="tel:+7{{ phone_format($contact_info['phone']) }}">{{ $contact_info['phone'] }}</a>
         <p><a href="mailto:{{ phone_format($contact_info['email']) }}">{{ $contact_info['email'] }}</a></p>
-        <p><a href="#">Скачать реквизиты предприятия</a></p>
+        {{-- <p><a href="#">Скачать реквизиты предприятия</a></p> --}}
     </div>
 
     <div class="coll">
