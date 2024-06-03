@@ -24,7 +24,7 @@
 
     <section class="product_section">
         <div class="container">
-            <div class="prosucts_apge_wrapper">
+            <div id="product_list" class="prosucts_apge_wrapper">
                 @foreach ($products as $item)
                     <x-product.page-card :item="$item"></x-product.page-card>
                 @endforeach

@@ -24,7 +24,7 @@
     </section>
 
     <section class="policy_section max_height">
-        <div class="container">
+        <div class="container text_styles">
             {!! $page->description !!}
         </div>
     </section>

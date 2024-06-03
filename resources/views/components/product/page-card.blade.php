@@ -12,5 +12,10 @@
     </div>
 
     <a class="more_btn button" href="{{ route('product_page', $item['slug']) }}">Подробнее</a>
+    <product-questions
+        title="{{ $item['title'] }}"
+        img="{{ Storage::url('products/'.$item['img'])}}"
+        rout="{{ route('send_consultation') }}"
+    ></product-questions>
 
 </div>

@@ -7,3 +7,17 @@ label{
         color: red;
     }
 }
+
+label._error{
+    color: red;
+    a {
+        color: red;
+    }
+}
+
+.checkbox_label {
+    display: flex;
+    span {
+        margin-left: 10px;
+    }
+}

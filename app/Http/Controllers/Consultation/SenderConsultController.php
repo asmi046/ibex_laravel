@@ -18,12 +18,12 @@ class SenderConsultController extends Controller
         $data = $request->validated();
 
 
-        $tmp = $tgsender->handle("<b>Консультация</b>\n\rИмя: ".$data['name']."\n\rТелефон: ".$data['phone']."\n\rКомментарий: ".$data['message']);
+        $tmp = $tgsender->handle("<b>Запрос цены</b>\n\rТовар: ".$data['product']."\n\rИмя: ".$data['name']."\n\rТелефон: ".$data['phone']."\n\rКомментарий: ".$data['message']);
 
 
         Mail::to(explode(",",config('consultation.mailadresat')))->send(new ConsultMail($data));
 
-        return redirect()->route('thencs_consult');
+        return [true];
     }
 
     public function show_thencs() {

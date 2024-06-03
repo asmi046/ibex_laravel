@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
                 ProductSeeder::class,
                 ServiceSeeder::class,
                 OptionSeeder::class,
+                AcceptSeeder::class,
                 PageSeeder::class,
                 UserSeeder::class,
                 MenuSeeder::class
