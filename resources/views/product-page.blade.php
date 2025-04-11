@@ -31,7 +31,7 @@
         <div class="container">
             <div class="inner_top_line">
                 <div class="img_wrapper">
-                    <img src="{{ Storage::url('products/'.$product->img) }}" alt="{{ $product->title }}">
+                    <img src="{{ Storage::url($product->img) }}" alt="{{ $product->title }}">
                 </div>
 
                 {{-- <div class="short_description text_styles">
