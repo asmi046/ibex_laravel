@@ -1,7 +1,7 @@
 <div class="prosuct">
     <div class="img_wrapper">
         <a href="{{ route('product_page', $item['slug']) }}">
-            <img src="{{ Storage::url('products/'.$item['img'])}}" alt="{{ $item['title'] }}">
+            <img src="{{ Storage::url($item['img'])}}" alt="{{ $item['title'] }}">
         </a>
     </div>
 
@@ -14,7 +14,7 @@
     <a class="more_btn button" href="{{ route('product_page', $item['slug']) }}">Подробнее</a>
     <product-questions
         title="{{ $item['title'] }}"
-        img="{{ Storage::url('products/'.$item['img'])}}"
+        img="{{ Storage::url($item['img'])}}"
         rout="{{ route('send_consultation') }}"
     ></product-questions>
 
