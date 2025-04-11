@@ -15,7 +15,7 @@ class ProductMainSection extends Component
      */
     public function __construct()
     {
-        $this->all_product = Product::all();
+        $this->all_product = Product::orderBy('order', 'ASC')->take(30)->get();
     }
 
     /**
