@@ -27,12 +27,18 @@
         </div>
     </section>
 
-    <section class="product_page_section">
+    <section class="product_page_section" id="product_page">
         <div class="container">
             <div class="inner_top_line">
                 <div class="img_wrapper">
                     <img src="{{ Storage::url($product->img) }}" alt="{{ $product->title }}">
                 </div>
+
+                <product-questions
+                    title="{{ $title }}"
+                    img="{{ Storage::url($product->img) }}"
+                    rout="{{ route('send_consultation') }}"
+                ></product-questions>
 
                 {{-- <div class="short_description text_styles">
                     {!! $product->short_description !!}
